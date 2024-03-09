@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<!--Animasi saya dapat dari codepen kakak. mulai dari card nya dan lain sebagainya-->
-<!--
-  Di buka di HP sudah bagus dan responsiv 
-  Ket : Kalau source img nya bisa di sesuaikan kak karena di saya
-        /porto/assets/img.jpg
--->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raffli Bisma Aryasatya</title>
+    <meta property="og:image" content="/assets/foto.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,7 +41,7 @@
           style="width: 175px; height: 175px"
         >
           <img
-            src="/latihan-2/porto/assets/foto.jpg"
+            src="assets/foto.jpg"
             class="position-absolute top-0 start-0 w-100 h-100"
             style="object-fit: cover"
             alt="Foto"
@@ -88,14 +83,14 @@
         <div class="projects">
           <div class="project">
             <img
-              src="/latihan-2/porto/assets/Sertifikat.jpg"
+              src="assets/Sertifikat.jpg"
               alt="Sertifikat 1"
             />
             <h3>Sertifikat Python India</h3>
             <p>Saya mengikuti kuis python di india</p>
           </div>
           <div class="project">
-            <img src="/latihan-2/porto/assets/Raffli.jpg" alt="Sertifikat 2" />
+            <img src="assets/Raffli.jpg" alt="Sertifikat 2" />
             <h3>Sertifikat NetworkSec</h3>
             <p>Yang Telah menghadiri acara zoom tentang keamanan jaringan</p>
           </div>
@@ -105,15 +100,15 @@
         <h2>Portofolio</h2>
         <div class="projects">
           <figure>
-            <img src="/latihan-2/porto/assets/pkk.jpg" alt="Mountains" width="350" height="250"/>
+            <img src="assets/pkk.jpg" alt="Mountains" width="350" height="250"/>
             <figcaption>SIM PKK</figcaption>
           </figure>
           <figure>
-            <img src="/latihan-2/porto/assets/java.jpeg" alt="Mountains" width="350px" height="250px"/>
+            <img src="assets/java.jpeg" alt="Mountains" width="350px" height="250px"/>
             <figcaption>SIM Perpus Java</figcaption>
           </figure>
           <figure>
-            <img src="/latihan-2/porto/assets/blog.png" alt="Mountains" />
+            <img src="assets/blog.png" alt="Mountains" />
             <figcaption>Blogspot</figcaption>
           </figure>
         </div>
@@ -121,37 +116,35 @@
       <section id="contact">
         <h2>Komentar</h2>
         <p>Komentar ke saya apabila anda butuh.</p>
-
-        <form action="belajar">
+        <div class="mypost">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Email"
+            />
+            <label for="floatingInput">Email</label>
+          </div>
           <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
               id="floatingInput"
-              placeholder="Nama"
+              placeholder="Enter you nickname"
             />
-            <label for="floatingInput">Masukan Nama</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInputEmail"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInputEmail">Email address</label>
+            <label for="floatingInput">Enter Name</label>
           </div>
           <div class="form-floating">
             <textarea
               class="form-control"
               placeholder="Leave a comment here"
               id="floatingTextarea"
-              style="height: 100px"
             ></textarea>
             <label for="floatingTextarea">Comments</label>
           </div>
-          <button class="ease-in duration-300 ...">Kirim</button>
-        </form>
+          <button type="button" class="btn btn-dark">Comment</button>
+        </div>
       </section>
     </main>
 
