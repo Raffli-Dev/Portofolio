@@ -293,3 +293,15 @@
      color: #fff;
     }
   }
+
+  .mypost {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 0px black;
+  }
+
+  .mypost > button {
+    margin-top: 20px;
+  }
