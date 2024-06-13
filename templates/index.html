@@ -18,21 +18,24 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <header>
-      <h1>Portofolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#serti">Sertifikat</a></li>
-          <li><a href="#portofolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div data-aos="fade-down">
+      <header>
+        <h1>Portofolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#serti">Sertifikat</a></li>
+            <li><a href="#portofolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <br />
-    <div class="foto">
+    <div class="foto" data-aos="fade-up-right">
       <div
         class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
       >
@@ -64,86 +67,94 @@
     </div>
     <main>
       <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Seorang Junior Developer adalah seorang profesional dalam bidang
-          pengembangan perangkat lunak yang berada di tahap awal karirnya.
-          Mereka biasanya memiliki pengetahuan dasar yang kuat tentang bahasa
-          pemrograman, konsep pemrograman, dan metodologi pengembangan perangkat
-          lunak. Sebagai seorang Junior Developer, mereka biasanya bekerja di
-          bawah bimbingan dan pengawasan langsung dari Senior Developer atau tim
-          pengembangan yang lebih berpengalaman.
-        </p>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <h2>About Me</h2>
+          <p>
+            Seorang Junior Developer adalah seorang profesional dalam bidang
+            pengembangan perangkat lunak yang berada di tahap awal karirnya.
+            Mereka biasanya memiliki pengetahuan dasar yang kuat tentang bahasa
+            pemrograman, konsep pemrograman, dan metodologi pengembangan perangkat
+            lunak. Sebagai seorang Junior Developer, mereka biasanya bekerja di
+            bawah bimbingan dan pengawasan langsung dari Senior Developer atau tim
+            pengembangan yang lebih berpengalaman.
+          </p>
+        </div>
       </section>
       <section id="serti">
-        <div class="tengah">
-          <h2>Sertifikat</h2>
-          <p>Ini adalah sertifikat saya</p>
-        </div>
-        <div class="projects">
-          <div class="project">
-            <img
-              src="{{ url_for('static', filename='assets/Sertifikat.jpg') }}"
-              alt="Sertifikat 1"
-            />
-            <h3>Sertifikat Python India</h3>
-            <p>Saya mengikuti kuis python di india</p>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="tengah">
+            <h2>Sertifikat</h2>
+            <p>Ini adalah sertifikat saya</p>
           </div>
-          <div class="project">
-            <img src="{{ url_for('static', filename='assets/Raffli.jpg') }}" alt="Sertifikat 2" />
-            <h3>Sertifikat NetworkSec</h3>
-            <p>Yang Telah menghadiri acara zoom tentang keamanan jaringan</p>
+          <div class="projects">
+            <div class="project">
+              <img
+                src="{{ url_for('static', filename='assets/Sertifikat.jpg') }}"
+                alt="Sertifikat 1"
+              />
+              <h3>Sertifikat Python India</h3>
+              <p>Saya mengikuti kuis python di india</p>
+            </div>
+            <div class="project">
+              <img src="{{ url_for('static', filename='assets/Raffli.jpg') }}" alt="Sertifikat 2" />
+              <h3>Sertifikat NetworkSec</h3>
+              <p>Yang Telah menghadiri acara zoom tentang keamanan jaringan</p>
+            </div>
           </div>
         </div>
       </section>
       <section id="portofolio">
-        <h2>Portofolio</h2>
-        <div class="projects">
-          <figure>
-            <img src="{{ url_for('static', filename='assets/pkk.jpg') }}" alt="Mountains" width="350" height="250"/>
-            <figcaption>SIM PKK</figcaption>
-          </figure>
-          <figure>
-            <img src="{{ url_for('static', filename='assets/java.jpeg') }}" alt="Mountains" width="350px" height="250px"/>
-            <figcaption>SIM Perpus Java</figcaption>
-          </figure>
-          <figure>
-            <img src="{{ url_for('static', filename='assets/blog.png') }}" alt="Mountains" />
-            <figcaption>Blogspot</figcaption>
-          </figure>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <h2>Portofolio</h2>
+          <div class="projects">
+            <figure>
+              <img src="{{ url_for('static', filename='assets/pkk.jpg') }}" alt="Mountains" width="350" height="250"/>
+              <figcaption>SIM PKK</figcaption>
+            </figure>
+            <figure>
+              <img src="{{ url_for('static', filename='assets/java.jpeg') }}" alt="Mountains" width="350px" height="250px"/>
+              <figcaption>SIM Perpus Java</figcaption>
+            </figure>
+            <figure>
+              <img src="{{ url_for('static', filename='assets/blog.png') }}" alt="Mountains" />
+              <figcaption>Blogspot</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
       <section id="contact">
-        <h2>Komentar</h2>
-        <p>Komentar ke saya apabila anda butuh.</p>
-        <div class="mypost">
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="Email"
-            />
-            <label for="floatingInput">Email</label>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <h2>Komentar</h2>
+          <p>Komentar ke saya apabila anda butuh.</p>
+          <div class="mypost">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Email"
+              />
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Enter you nickname"
+              />
+              <label for="floatingInput">Enter Name</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+            <button type="button" class="btn btn-dark">Comment</button>
           </div>
-          <div class="form-floating mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInput"
-              placeholder="Enter you nickname"
-            />
-            <label for="floatingInput">Enter Name</label>
-          </div>
-          <div class="form-floating">
-            <textarea
-              class="form-control"
-              placeholder="Leave a comment here"
-              id="floatingTextarea"
-            ></textarea>
-            <label for="floatingTextarea">Comments</label>
-          </div>
-          <button type="button" class="btn btn-dark">Comment</button>
         </div>
       </section>
     </main>
@@ -177,5 +188,9 @@
         </ul>
       </nav>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
